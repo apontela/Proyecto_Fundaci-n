@@ -1,0 +1,274 @@
+h1 {
+    font-size: 22px;
+  }
+  @media (min-width:576px) {
+    h1 {
+      font-size: 22px;
+    }
+  }
+  @media (min-width:768px) {
+    h1 {
+      font-size: 24px;
+    }
+  }
+  @media (min-width:992px) {
+    h1 {
+      font-size: 40px;
+    }
+  }
+  body{
+      background-color: #F7F5FB;
+      text-align: center;
+  }
+.navbar--modify {
+    font-size: 1.4em;
+    background-color: #F7F5FB !important;
+    span a {
+        color: #F9AB55;
+    }
+    position: fixed;
+    width: 100%;
+    opacity: 0.8;
+    z-index: 10; 
+}
+
+.navbar-nav--modify {
+    margin: auto
+}
+
+.header {
+    background-image: url(http://tierraeste.com/wp-content/uploads/beautiful-kids_204506.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.header__title--modify {
+    padding-top: calc(50vh - 140px);
+    margin: auto 15% auto 15%;
+    color: #F7F5FB;
+    font-style: italic;
+}
+
+.header__box--modify {
+    // margin: 0% 25% 0% 25%;
+    background-color: rgba($color: #000000, $alpha: 0.6);
+    padding: 60px 10px 60px 10px;
+    border-radius: 40px
+}
+
+.header__shape--modify {
+    font-size: 3em;
+    color: #F7F5FB;
+    position: absolute;
+    bottom: 0;
+    left: calc(50vw - 30px);
+}
+
+.nosotros {
+    font-size: 1.3em;
+}
+
+.nosotros__primero {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-column-gap: 1em;
+    text-align: center;
+    background: #909CC2;
+    .nosotros__primero__caption {
+        align-self: center
+    }
+
+}
+
+.nosotros__segundo {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-column-gap: 1em;
+    text-align: center;
+    background: #F9AB55;
+    grid-area: -1 / 1;
+    .nosotros__segundo__caption {
+        align-self: center
+    }
+    .nosotros__segundo__image {
+        grid-column: 2;
+        grid-row: 1;
+    }
+}
+
+.nosotros__tercero {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-column-gap: 1em;
+    text-align: center;
+    background: #909CC2;
+    .nosotros__tercero__caption {
+        align-self: center
+    }
+    border-bottom: solid 1px gray
+}
+.grid__noticias {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    text-align: center;
+    grid-gap: 1em;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.primera__noticia {
+    grid-column: 2;
+}
+
+.segunda__noticia {
+    grid-column: 3
+}
+
+.title {
+    grid-column: 1 / -1;
+}
+
+.agradecimiento {
+    text-align: center;
+    padding: 10% 10% 10% 10%;
+    margin-bottom: 10%;
+    background-color: #F9AB55;
+    font-size: 1.2em;
+    h2 {
+        padding: 40px
+    }
+    color: white;
+}
+
+.formulary {
+    display: grid;
+    margin: 2% 20% 0 20%;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    border: solid 5px gray;
+    border-radius: 20px;
+    overflow: hidden;
+    div:nth-child(even) {
+        background: #909CC2;
+        padding-left: 10%
+    }
+    div:nth-child(odd) {
+        background: #F9AB55;
+        padding-left: 10%
+    }
+    color: #F7F5FB;
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: 10%;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.location {
+    grid-row: 1 / -1;
+    grid-column: 2;
+    width: 100%;
+    border: solid gray 1px
+}
+
+.social, .contact {
+    grid-row: 3;
+    background-color: #909CC2;
+    padding-top: 15px;
+    color: white
+}
+
+.social {
+    font-size: 50px
+}
+
+.header__nosotros, .main-grid, .colaborar {
+    padding-top: 90px !important
+}
+
+.header__nosotros {
+    height: 100vh;
+    padding-right: 20%;
+    padding-left: 20%;
+    padding-top: calc(50vh - 140px) !important;
+    font-family: cursive;
+    background-color: #084887;
+    color: white
+}
+
+.consejo-general {
+    height: 100vh;
+    padding-right: 15%;
+    padding-left: 20%;
+    padding-top: calc(15vh);
+    font-family: cursive;
+    background-color: #F9AB55;
+    color: white;
+    font-size: 22px;
+    h3 {
+        padding-bottom: 25px;
+        font-size: 36px
+    }
+    table {
+        margin-left: 20%
+    }
+}
+
+.ejecutivo {
+    height: 100vh;
+    padding-right: 15%;
+    padding-left: 20%;
+    padding-top: calc(15vh);
+    font-family: cursive;
+    background-color: #909CC2;
+    color: white;
+    font-size: 22px;
+    h3 {
+        padding-bottom: 25px;
+        font-size: 36px
+    }
+    table {
+        margin-left: 30%
+    }
+}
+
+.directorio {
+    height: 100vh;
+    padding-right: 15%;
+    padding-left: 20%;
+    padding-top: calc(15vh);
+    font-family: cursive;
+    background-color: #F9AB55;
+    color: white;
+    font-size: 16px;
+    h3 {
+        padding-bottom: 25px;
+        font-size: 36px
+    }
+    table {
+        margin-left: 20%
+    }
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-gap: 10px;
+    font-size: 20px;
+    font-family: cursive
+}
+
+.colaborar {
+    margin: 0 20% 0 20%;
+    padding: 5%;
+}
+
+iframe {
+    max-width: 100%;
+}
